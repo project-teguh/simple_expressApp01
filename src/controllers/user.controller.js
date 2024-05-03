@@ -20,7 +20,8 @@ const register = async (req, res) => {
     console.log(body);
 
     return res.status(201).send({
-        message: "User registered successfully"
+        message: "User registered successfully. Here is your registration data:",
+        data: body
     })
 }
 
@@ -32,4 +33,13 @@ const allUsers = async (req, res) => {
         data: all
     });
 }
+
+// const updateUser = async (req, res) => {
+//     const data = await knex.update.from('user');
+
+//     return res.status(200).send({
+//         message: "User updated successfully",
+//         data: data
+//     })
+// }
 module.exports = {register, allUsers}
