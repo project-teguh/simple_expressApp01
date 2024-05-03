@@ -21,9 +21,11 @@
     "prettier": "latest"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "cors": "latest",
     "dotenv": "latest",
     "express": "latest",
+    "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
     "mysql2": "^3.9.7"
   }
